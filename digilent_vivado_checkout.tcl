@@ -100,10 +100,11 @@ update_ip_catalog -rebuild
 
 # Add hardware description language sources
 puts "INFO: Adding HDL sources"
-add_files -quiet -norecurse $repo_path/src/hdl
+add_files -quiet  $repo_path/src/hdl
+
 # Add hardware description language sources for simulation
 puts "INFO: Adding HDL simulation sources"
-add_files -fileset sim_1 -quiet  -norecurse $repo_path/src/hdl_sim
+add_files -fileset sim_1 -quiet $repo_path/src/hdl_sim
 
 
 # Add IPs
